@@ -1,6 +1,29 @@
-# Project Name
+# SkyBeat Related Artists Module
 
-> Project description
+Componenet displays all related artists linked to mainpage artist
+
+## API 
+```sh
+POST: 
+  endpoint= '*/:id/related-artists/:artistId'
+  Creates a new link for new related artist to the mainpage artist
+```
+```sh
+GET:
+  endpoint= '*/:id/related-artists'
+  Retrieves all related artists to the mainpage artist
+```
+```sh
+PUT:
+  endpoint= '*/:id/related-artists/:artistId'
+  Edits the linkage between related artist to mainpage artist 
+```
+```sh
+DELETE:
+  endpoint= '*/:id/related-artists/:artistId'
+  Deletes linkage between related artist to mainpage artist
+```  
+  
 
 ## Related Projects
 
