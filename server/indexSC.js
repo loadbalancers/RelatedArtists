@@ -10,7 +10,7 @@ app.use('/ra-module/:id', express.static(path.join(__dirname + '../public' )))
 app.post('*/:id/related-artists/:artistId', (req, res) => {
   //creates a new link, 
   //that links new relation to artist id
-})
+})  
 
 app.get('*/:id/related-artists', (req, res) => {
   //gets related artist info for main artist

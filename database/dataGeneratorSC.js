@@ -1,11 +1,9 @@
 const fs = require('fs');
 const faker = require('faker');
 
-(function genArtist() {
-    for (var i = 0; i < 10; i ++) {
-      generateArtist();
-    }
-}());
+// ---------------------------
+// experiment... 
+//--------------------------artists
 
 const generateArtist = () => new Promise ((resolve, reject) => {
   let artists ='';
@@ -14,6 +12,28 @@ const generateArtist = () => new Promise ((resolve, reject) => {
   }
   resolve(fs.appendFileSync('./database/artistsAll2.csv', artists));
 }); 
+
+(function genArtist() {
+  for (var i = 0; i < 10; i ++) {
+    generateArtist();
+  }
+}());
+
+//--------------------------relationships
+
+const generateArtistRelationships = () => new Promise ((resolve, reject) => {
+  let artists ='';
+  for (var i = 9000001; i <= 10000000; i ++) {
+    artists += `${i}, ${faker.random.number({min:1, max:10000000})}\n`
+  }
+  resolve(fs.appendFileSync('./database/relations.csv', artists));
+}); 
+
+(function genRelations() {
+  for (var i = 0; i < 10; i ++) {
+    generateArtistRelationships();
+  }
+}());
 
 // ---------------------------
 // experiment... 

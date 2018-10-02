@@ -2,6 +2,8 @@ DROP DATABASE IF EXISTS skybeat;
 CREATE DATABASE skybeat;
 \c skybeat;
 
+DROP TABLE IF EXISTS artists;
+
 CREATE TABLE artists (
   id SERIAL PRIMARY KEY, 
   ArtistName VARCHAR(60) NOT NULL,
@@ -10,9 +12,13 @@ CREATE TABLE artists (
   TrackName VARCHAR(100)
 );
 
+DROP TABLE IF EXISTS artistRelations;
+
 CREATE TABLE artistRelations (
-  ArtistId INT NOT NULL,
-  RelatedId INT NOT NULL,
-  FOREIGN KEY (ArtistID) REFERENCES artists(Id),
-  FOREIGN KEY (RelatedId) REFERENCES artists(Id)
+  PRIMARY KEY (ArtistId, RelatedId),
+  ArtistId INT NOT NULL, 
+  RelatedId INT NOT NULL, 
+  FOREIGN KEY (ArtistId) REFERENCES artists (id),
+  FOREIGN KEY (RelatedId) REFERENCES artists (id)
 )
+
