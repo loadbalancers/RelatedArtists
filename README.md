@@ -16,7 +16,7 @@ GET:
 ```sh
 PUT:
   endpoint= '*/:id/related-artists/:artistId'
-  Edits the linkage between related artist to mainpage artist 
+  Edits information for related artist
 ```
 ```sh
 DELETE:
