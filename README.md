@@ -5,8 +5,8 @@ Componenet displays all related artists linked to mainpage artist
 ## API 
 ```sh
 POST: 
-  endpoint= '*/:id/related-artists/:artistId'
-  Creates a new link for new related artist to the mainpage artist
+  endpoint= '*/:id/related-artists/'
+  Creates a related artist and links to the mainpage artist
 ```
 ```sh
 GET:
