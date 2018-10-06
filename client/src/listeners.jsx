@@ -4,7 +4,7 @@ import CSSModules from 'react-css-modules';
 
 const Listeners = props => (
   <div className="RAListeners">
-    {props.artist.listeners.toString ().replace (/\B(?=(\d{3})+(?!\d))/g, ',')}
+    {props.artist.followers.toString ().replace (/\B(?=(\d{3})+(?!\d))/g, ',')}
   </div>
 );
 

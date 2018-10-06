@@ -29,7 +29,7 @@ const PopularSong = props => {
       <Popover id="popover-positioned-right" style={styles}>
         <div style={styles2}>
           <FontAwesomeIcon icon={faPlayCircle} style={styles3} />
-          {props.artist.popularSong}
+          {props.artist.trackname}
         </div>
       </Popover>
 
