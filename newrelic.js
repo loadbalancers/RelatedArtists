@@ -9,11 +9,11 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name: ['My Application'],
+  app_name: ['Skybeat-RelatedArtists'],
   /**
    * Your New Relic license key.
    */
-  license_key: 'license key here',
+  license_key: '821e5e3fc14e88b68dfda45bfe86d2db196162df',
   logging: {
     /**
      * Level at which to log. 'trace' is most useful to New Relic when diagnosing

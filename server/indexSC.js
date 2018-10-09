@@ -1,4 +1,4 @@
-// const newRel = require('newrelic');
+const newRel = require('newrelic');
 const express = require('express');
 const cors = require('cors');
 const path = require('path');

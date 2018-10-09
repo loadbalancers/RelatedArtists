@@ -69,7 +69,6 @@ const getRelArtists = (artistId, callback) => {
       console.log("error GET!")
       callback(err, null);
     } else {
-      console.log(result.rows);
       callback(null, result.rows);
     }
   })
